@@ -134,6 +134,7 @@ if [[ $BEAMTYPE != "cosmic" ]] || [[ ${FORCECALIBRATIONS:-} == 1 ]] ; then # Cal
   # calibrations for ZDC
   if [[ $CAN_DO_CALIB_ZDC_TDC == 1 ]]; then
     if [[ -z ${CALIB_ZDC_TDC+x} ]]; then CALIB_ZDC_TDC=1; fi
+	if [[ -z ${CALIB_ZDC_TDC_PARAMETERS} ]]; then CALIB_ZDC_TDC_PARAMETERS="RecoParamZDC.tdc_calib[9]=1;RecoParamZDC.tdc_calib[0]=1;RecoParamZDC.tdc_calib[8]=1;RecoParamZDC.tdc_calib[1]=1;RecoParamZDC.tdc_calib[3]=1;RecoParamZDC.tdc_calib[6]=1;RecoParamZDC.tdc_calib[5]=1;RecoParamZDC.tdc_calib[4]=1;RecoParamZDC.tdc_calib[2]=1;RecoParamZDC.tdc_calib[7]=1;RecoParamZDC.energy_calib[13]=1;RecoParamZDC.energy_calib[12]=1;RecoParamZDC.energy_calib[11]=1;RecoParamZDC.energy_calib[6]=1;RecoParamZDC.energy_calib[25]=1;RecoParamZDC.energy_calib[14]=1;RecoParamZDC.energy_calib[20]=1;RecoParamZDC.energy_calib[5]=1;RecoParamZDC.energy_calib[0]=1;RecoParamZDC.energy_calib[19]=1;RecoParamZDC.tower_calib[1]=1;RecoParamZDC.tower_calib[2]=1;RecoParamZDC.tower_calib[3]=1;RecoParamZDC.tower_calib[4]=1;RecoParamZDC.tower_calib[24]=1;RecoParamZDC.tower_calib[21]=1;RecoParamZDC.tower_calib[22]=1;RecoParamZDC.tower_calib[23]=1;RecoParamZDC.tower_calib[18]=1;RecoParamZDC.tower_calib[16]=1;RecoParamZDC.tower_calib[17]=1;RecoParamZDC.tower_calib[15]=1;RecoParamZDC.tower_calib[8]=1;RecoParamZDC.tower_calib[9]=1;RecoParamZDC.tower_calib[7]=1;RecoParamZDC.tower_calib[10]=1"
   fi
 
   # calibrations for FIT
